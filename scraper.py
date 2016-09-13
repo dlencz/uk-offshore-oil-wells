@@ -137,7 +137,7 @@ def scrapewell(url):
         data["Datum Type"] = "KB"
 
     data['url'] = url
-    morph.datastore.save(unique_keys=["Well Registration No."], data=data, latlng=data.pop('latlng', None), silent=True)
+    scraperwiki.datastore.save(unique_keys=["Well Registration No."], data=data, latlng=data.pop('latlng', None), silent=True)
 
 
 
