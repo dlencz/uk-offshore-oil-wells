@@ -9,7 +9,6 @@ import datetime
 import httplib
 import time
 import mechanize
-import datastore
 
 
 def main():
@@ -138,7 +137,7 @@ def scrapewell(url):
         data["Datum Type"] = "KB"
 
     data['url'] = url
-    datastore.save((unique_keys=["Well Registration No."], data=data,unique_keys=["Well Registration No."], data=data, latlng=data.pop('latlng', None), silent=True)
+    scraperwiki.datastore.save(unique_keys=["Well Registration No."], data=data, latlng=data.pop('latlng', None), silent=True)
 
 
 
