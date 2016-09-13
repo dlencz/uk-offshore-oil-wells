@@ -137,7 +137,7 @@ def scrapewell(url):
         data["Datum Type"] = "KB"
 
     data['url'] = url
-    scraperwiki.datastore.save(unique_keys=["Well Registration No."], data=data, latlng=data.pop('latlng', None), silent=True)
+    scraperwiki.sql.save(unique_keys=["Well Registration No."], data=data, latlng=data.pop('latlng', None), silent=True)
 
 
 
