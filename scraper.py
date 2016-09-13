@@ -38,7 +38,7 @@ def getquadranturl(i):
     # set up the mechanize object
     br = mechanize.Browser()
     br.set_handle_robots(False)
-    br.open("https://www.og.decc.gov.uk/pls/wons/wdep0100.qryWell")
+    br.open("https://itportal.decc.gov.uk/pls/wons/wdep0100.qryWell")
 
     # select the one form on the page
     br.form = list(br.forms())[0]
